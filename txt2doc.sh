@@ -6,7 +6,7 @@
 
 for file in *.txt
 do
-    multimarkdown "$file" | textutil -format html -convert doc -output "`basename "$file" | sed 's/\.txt//'`.doc" -stdin
+    multimarkdown "$file" | textutil -format html -convert docx -output "`basename "$file" | sed 's/\.txt//'`.docx" -stdin
 done
 
 exit
